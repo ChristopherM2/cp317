@@ -13,7 +13,10 @@ groups = db["Groups"]
 print(db.list_collection_names())
 
 user = {
-    "Name": "Christopher Matheson",
-    "ID": 1
+    "Name": "Shayan Dhillon",
+    "ID": 2
 }
+
+group = {"Users": [1,2]}
 users.insert_one(user)
+groups.insert_one(group)
